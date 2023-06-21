@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .bodertable{
+            border: 1px solid blue;
+        }
+        .headtable{
+            border: 1px solid red;
+            text-decoration: underline;
+            
+        } */
+        table, th,td {
+            border-collapse: collapse;
+        }
+        .headTB{
+            color: aquamarine;
+            border: 1px solid red;
+            /* border-collapse: collapse; */
+           font-variant: small-caps;
+           text-align: center;
+        }
+        .row{
+            background-color: blue;
+        }
+       
+        #celltb{
+            color: red;
+            text-align:right;
+        }
+    </style>
+</head> 
+<body>
+        <!-- basic-->
+    <div>
+        <h1 style=" color: red;font-size: 100px;", >ALoo</h1>
+        <a href="https://www.youtube.com/" target="_self">24</a>
+        <iframe src="https://www.youtube.com/watch?v=a8mNDKH5E_s" frameborder="0"></iframe>
+        <img style="width: 100px;height: 100px;" src="https://dulichdaiviet.com/uploaded/anh-cam-nang-dl/cam-nang-dl-chau-au/8-diadiem-dulich-anhquoc-noitieng/8-diadiem-dulich-anhquoc-noitieng-gvt-2.jpg" alt="dddd">
+
+    </div>
+    <!-- Table -->
+    <div>
+        <ul style="list-style-type: circle;">
+           <li>
+                <a href="https://carlsbergvietnam.vn/vi/products/huda/huda/">huada</a>
+           </li>
+           <li>huda
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                </ul>
+           </li>   
+        </ul>
+        <ol type="">
+            <li>huda</li>
+            <li>tiger</li>
+        </ol>
+    </div>
+    <!-- Table +-->
+    <div>
+        <table style=" width: 100% ; border: 1px solid blue ; border-collapse: collapse ;">
+            <thead>
+                <tr>
+                    <th class="headTB"  >firstname</th>
+                    <th class="headTB" >Lastname</th>
+                    <th class="headTB">Age</th>
+                </tr>
+            </thead>    
+            <tbody>
+                <tr>
+                    <td class="headTB" id="celltb">Quy</td>
+                    <td class="headTB" id="celltb">Dung</td>
+                    <td class="headTB" id="celltb" >30</td>
+                </tr>
+                <tr>
+                    <td class="headTB" id="celltb" >Nguyen</td>
+                    <td class="headTB" id="celltb" >Trung</td>
+                    <td class="headTB" id="celltb" >20</td>
+                </tr>
+               
+            </tbody>
+        </table>
+    </div>
+    <!-- Select funtion-->
+    <div>
+        <input value="Quang" type="text">
+        <input type="text" placeholder="enter yout name">
+        <input type="number" placeholder="enter yout name">
+        <input type="date" placeholder="enter yout name">
+        <input type="file" placeholder="enter your name">
+        <input type="button" value="đăng nhập">
+        <select >
+            <option value="">Nam</option>
+            <option value="">Nam</option>
+        </select>
+        <button>Đăng kí </button>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    </div>
+    <!-- Example-->
+    <div>
+        <table>
+            <tr>
+                <td>
+                    <label for="">Name: </label>
+                    <input type="text" name="" id="">
+                </td>
+                <tr>
+                    <label for="">Email: </label>
+                    <input type="text" name="" id="">
+            </tr>
+            </tr>
+        </table>
+        <input type="checkbox"><label for="">Subcribe...</label><br>
+        <table>
+            <tr>
+                <td rowspan="4"><label for="">Languages Knows</label></td>
+                <td> <input type="checkbox" name="" id="">Đichơi</td>
+            </tr>
+            <tr>
+                <td>1</td>
+    
+            </tr>
+        </table>
+        
+        
+
+    </div>
+    <!-- Bài tập -->
+    <div>
+        <h1 style="color: red;">Employee Registration Form</h1>
+        <input type="radio" checked><label for="">Mr.</label>
+        <input type="radio" ><label for="">Mrs.</label>
+        <input type="radio" ><label for="">Ms.</label>
+        <table>
+            <tr>
+                <td>
+                    <label for="">Firstname:</label>
+                </td>
+                <td> <input type="text" placeholder="Firstname" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Lastname:</label>
+                </td>
+                <td> <input type="text" placeholder="Lastname" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Mail address1:</label>
+                </td>
+                <td> <input type="text" placeholder="" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Mail address2:</label>
+                </td>
+                <td> <input type="text" placeholder="" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">City:</label>
+                </td>
+                <td> <input type="text" placeholder="" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">State:</label>
+                </td>
+                <td> 
+                    <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Zip:</label>
+                </td>
+                <td> <input type="text" placeholder="" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Upload photo:</label>
+                </td>
+                <td> <input type="file" placeholder="" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Email:</label>
+                </td>
+                <td> <input type="text" placeholder="" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Number:</label>
+                </td>
+                <td> <input type="text" placeholder="+84" name="" id=""></td>
+            </tr>
+            <tr>
+                <td rowspan="5" style="vertical-align: top;"><label for="" >Languages Knows</label></td>
+                <td> <input type="checkbox" name="" id="">Grublabla</td>
+            </tr>
+            <tr>
+                <td> <input type="checkbox" name="" id="" checked>Vietnam</td>
+            </tr>
+            <tr>
+                <td> <input type="checkbox" name="" id="" checked>Thai Lan</td>
+            </tr>
+            <tr>
+                <td> <input type="checkbox" name="" id="" checked>Campuchia</td>
+            </tr>
+            <tr>
+                <td> <input type="checkbox" name="" id="" checked>Lao</td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Additinational information:</label>
+                </td>
+                <td><textarea name="" id="" cols="30" rows="10" placeholder="Optional"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                
+                <td><input type="button" value="Submit" name="" id="">
+                 <input type="button" value="Reset"></td>
+                 
+            </tr>
+            
+        </table>
+
+
+    </div>
+</body>
+</html>
