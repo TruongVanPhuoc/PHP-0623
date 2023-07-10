@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+</head>
+
+<body>
+    <script>
+        // // In rác số từ 100 về 0
+        var a = 0;
+        // for (var i = 100; i >= 0; i--) {
+        //     console.log("Số " + i)
+        //     if (i == 0) {
+        //         console.log("Kết thúc chương trình")
+        //     }
+        // }
+
+
+        // 7 số đầu tiên chia hết cho 7
+        for (var i = 100; i >= 0; i--) {
+            if (i % 7 == 0) {
+                console.log("so chia het cho 7 la" + i)
+                a = a + 1
+                if (a == 5) {
+                    break
+                }
+            }
+        }
+        
+        
+        // Trung bình cộng chia hết cho 7
+        var sum = count = 0;
+            for (var i = 100; i >= 0; i--) {
+                if (i % 7 == 0) {
+                    sum = sum + i;
+                    count++;
+                }
+            }
+            console.log("tổng:" + sum)
+        console.log("số lượng số chia hết cho 7 là:"+count)
+        var avg = sum/count
+        console.log ("Trung bình cộng các sô chia hết cho 7:"+ avg )
+    </script>
+</body>
+
+</html>

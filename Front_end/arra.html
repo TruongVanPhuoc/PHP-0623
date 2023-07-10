@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arr = [5, 3, 8, 9, 4, 7]
+        var arr2 = [1, 8, 1, 9, 4, 7]
+        var max;
+        function ReverseArray(arr1) {
+            var anew = [];
+            for (i = arr1.length - 1; i >= 0; i--) {
+                anew.push(arr1[i])
+            }
+            arr1 = anew;
+            return anew
+        }
+        // Tìm số lớn nhất trong mảng vừa nhập
+        function maxArr(arr) {
+            max = arr[0];
+            for (var i = 0; i < arr.length; i++) {
+                if (arr[i] > max) {
+                    max = arr[i];
+                }
+            }
+            return max
+        }
+        // Tìm vị trí các số nhỏ nhất trong mảng
+        function findIndexMin(arr) {
+            var min = arr[0];
+            for (var i = 1; i < arr.length; i++) {
+                if (arr[i] < min) {
+                    min = arr[i];
+                }
+
+            }
+            var resutl = [];
+            for (var i = 0; i < arr.length; i++) {
+                if (arr[i] == min) {
+                    resutl.push(i)
+                }
+            }
+            return resutl
+        }
+        function checkSquareNumber(nummber){
+            if(nummber ==1)
+                return true
+            for(var i =1; i <nummber;i++ )
+                if (i*i == nummber){
+                    return true
+                }else if (i*i > nummber){
+                    return false
+                }
+            return false
+        }
+        // Đếm các số chính phương có trong mảng
+        function countSquareNumber(arr){
+            var count = 0;
+            for(var i = 0 ;i<arr.length;i++){
+                if(checkSquareNumber(arr[i])){
+                    count ++
+                }
+            }
+            return count
+        }
+        // Hiện thị các số nguyên tố có trong mảng lên màn hình
+        function 
+        var flag = true
+        for (var i = 2; i < number ; i++){
+            if( number%i ==0 ){
+                
+                flag = false
+                break
+            }
+        }
+        if(flag==true){console.log(number+" la so nguyen to");}
+        else{console.log(number+" khong phai so nguyen to");}
+        var arr3 = [6 ,9, 4, 16, 64]
+        
+        console.log(maxArr(arr))
+        console.log(findIndexMin(arr2))
+        console.log(countSquareNumber(arr3))
+
+    </script>
+</body>
+
+</html>

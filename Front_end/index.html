@@ -31,6 +31,28 @@
             color: red;
             text-align:right;
         }
+        .login{
+            width: 120px;
+            text-decoration: underline ;
+        }
+        .btnLogin{
+            background-color: bisque;
+            font-size: 14px;
+            margin: 10px 20px 0px 0px 
+
+        }
+        #dblogin{
+            background-image: ;
+            background-repeat: no-repeat;
+            background-attachment: fixed ;
+            background-position: ;
+        }
+        #headLogin{
+            color: crimson;
+            border:  2px solid red rosybrown;
+            border-radius: 10px;
+            
+        }
     </style>
 </head> 
 <body>
@@ -118,7 +140,7 @@
         <table>
             <tr>
                 <td rowspan="4"><label for="">Languages Knows</label></td>
-                <td> <input type="checkbox" name="" id="">Đichơi</td>
+                <td> <input class="btnLogin" type="checkbox" name="" id="">Đichơi</td>
             </tr>
             <tr>
                 <td>1</td>
@@ -233,8 +255,38 @@
             </tr>
             
         </table>
+    
 
+    </div>
+    <div>
+        <tr>
+           <table>
+              <thead>
+               
+                 <tr>
+                    <td colspan="2"  id="headLogin">Login</td>
 
+                 </tr>
+                 <tr>
+                    <td><label class="login" for="">Username:</label></td>
+                    <td><input type="text" placeholder="Username"></td>
+                 </tr>
+                 <tr>
+                    <td><label class="login" for="">Passwork:</label></td>
+                    <td><input type="text" placeholder="Passwork...."></td>
+
+                 </tr>
+                 <tr>
+                    <td></td>
+                    
+                    <td><input class="btnLogin" type="button" value="Login" name="" id="">
+                     <input class="btnLogin" type="button" value="Reset"></td>
+                     
+                </tr>
+
+              </thead>
+           </table>
+        </tr>
     </div>
 </body>
 </html>

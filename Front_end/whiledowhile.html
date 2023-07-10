@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <Script>
+        var i = 1;
+        var a = 0
+        while(i > 0){
+            if(i%7 == 0){
+                console.log("5 so chia heets cho 7:"+i)
+                a++;
+                if(a==5){
+                    break
+                }
+            }
+            i++;
+        }
+       
+    </Script> -->
+    <script>
+        var number = +prompt("Nhap mot so ba ki:")
+        var flag = true
+        for (var i = 2; i < number ; i++){
+            if( number%i ==0 ){
+                
+                flag = false
+                break
+            }
+        }
+        if(flag==true){console.log(number+" la so nguyen to");}
+        else{console.log(number+" khong phai so nguyen to");}
+    </script>
+</body>
+</html>

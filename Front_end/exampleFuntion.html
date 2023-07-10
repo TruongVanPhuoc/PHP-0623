@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // in tra các số từ 0 đến num
+        function print(num) {
+
+            for (var i = 0; i <= num; i++) {
+                console.log(i)
+
+            }
+
+        }
+        function divisible7(num){
+            var count=0
+            for (var i = 0; i < 100; i++) {
+                 
+                if (i % 7 == 0) {
+                    console.log("so chia het cho 7 la" + i)
+                    count = count + 1
+                    if (count == num) {
+                        break
+                    }
+                
+                }
+            }
+        }
+        // Trung bình cộng của các số chia hết cho n trong khoảng 0 -100
+        function average(num){
+            var sum = count = 0 ;
+            for(var i= 0;i <= 100;i++){
+                if (i%num == 0){
+                    sum=sum+i;
+                    count ++
+                }
+            }
+            var avg = sum/count;
+            return avg
+        }
+
+
+        print(13)
+        divisible7(5)
+        console.log(average(7))
+    </script>
+</body>
+
+</html>
