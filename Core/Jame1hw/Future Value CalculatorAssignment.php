@@ -86,13 +86,13 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $amount = $ints = $years = null;
         if (array_key_exists('amount', $_POST)) {
-            $amount = $_POST["amount"];
+            $amount = $_POST['amount'];
         }
         if (array_key_exists('ints', $_POST)) {
-            $ints = $_POST["ints"];
+            $ints = $_POST['ints'];
         }
         if (array_key_exists('years', $_POST)) {
-            $years = $_POST["years"];
+            $years = $_POST['years'];
         }
         if (!is_numeric($amount) || !is_numeric($ints) || !is_numeric($years)) {
             $result = "Invalid input!";
