@@ -98,9 +98,14 @@
             {
                 $delta = $this->getDiscriminant();
                 if ($delta >= 0){
-                    $x1 = (-$this->b + sqrt($delta)) / (2 * $this->a);
-                    $x2 = (-$this->b - sqrt($delta)) / (2 * $this->a);
-                    return "Phương trình có nghiệp x1=" . round($x1,2) .",      x2=" . round($x2,2);
+                    if($this -> a != 0)
+                    {$x1 = (-$this->b + sqrt($delta)) / (2 * $this->a);
+                        $x2 = (-$this->b - sqrt($delta)) / (2 * $this->a);
+                        return "Phương trình có nghiệp x1=" . round($x1,2) .",      x2=" . round($x2,2);}
+                    else {
+                        return "Số a phải khác 0";
+                    }
+                    
                 }
                 elseif ($delta === 0) {
                     if ($this->a != 0) {
@@ -116,10 +121,15 @@
             }
                 
         }
-    
-        $a = $_GET['a'];
-        $b = $_GET['b'];
-        $c = $_GET['c'];
+        $a = null;
+        $b = null;
+        $c = null;
+        if (isset($_GET['a'])) {
+            $a = $_GET['a'];}
+        if (isset($_GET['b'])) {
+            $b = $_GET['b'];}
+        if (isset($_GET['c'])) {    
+            $c = $_GET['c'];}
         $Equal = new QuadraticEquation($a, $b, $c);
         $result = $Equal->solve();
         
