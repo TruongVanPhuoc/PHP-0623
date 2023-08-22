@@ -186,6 +186,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </tr>
         <?php endforeach; ?>
     </table>
+
 </body>
 
 </html>
